@@ -1,0 +1,45 @@
+# Camera calibration and distortion parameters
+Camera.fx: 600.0  # Focal length in pixels (horizontal)
+Camera.fy: 600.0  # Focal length in pixels (vertical)
+Camera.cx: 1920.0 # Principal point (horizontal)
+Camera.cy: 1080.0 # Principal point (vertical)
+
+# Distortion coefficients for the fisheye lens
+Camera.k1: -0.2   # Radial distortion coefficient 1
+Camera.k2: 0.03   # Radial distortion coefficient 2
+Camera.p1: 0.0    # Tangential distortion coefficient 1
+Camera.p2: 0.0    # Tangential distortion coefficient 2
+
+# Camera resolution
+Camera.width: 3840
+Camera.height: 2160
+
+# Camera fps (frame per second)
+Camera.fps: 30.0
+
+# Color order of the images (0: RGB, 1: BGR. Default is RGB)
+Camera.RGB: 1
+
+# Monocular mode settings
+# Set this to 1 for monocular input
+Camera.monocular: 1
+
+# ORB Extractor: Number of features per image
+ORBextractor.nFeatures: 2000
+
+# ORB Extractor: Scale factor between levels in the scale pyramid
+ORBextractor.scaleFactor: 1.2
+
+# ORB Extractor: Number of levels in the scale pyramid
+ORBextractor.nLevels: 8
+
+# ORB Extractor: Fast threshold
+# Image is processed twice, first with this threshold
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+# Depth threshold (not used in monocular mode)
+ThDepth: 40.0
+
+# KeyFrame scale factor
+KeyFrame.scaleFactor: 1.0
